@@ -1,0 +1,209 @@
+body {
+    background-color: #c6b7e6;
+    background-image: url('fondo.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Mobile First Media Queries */
+@media (max-width: 768px) {
+    .accordion {
+        display: block;
+    }
+}
+
+/* Ajuste para el contenedor principal */
+.container-fluid {
+    flex: 1;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgba(219, 192, 246, 0.99);
+}
+
+.navbar .navbar-brand {
+    background-color: rgba(246, 139, 0, 0.86);
+    color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.navbar .nav-link {
+    background-color: rgba(113, 64, 159, 0.99);
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.navbar .nav-link:hover {
+    color: black;
+    background-color: rgba(255, 253, 171, 0.89);
+    border-radius: 5px;
+}
+
+/* Card styles */
+.card {
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.card-header {
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px solid #ddd;
+    color: white;
+}
+
+.list-group-item {
+    background-color: rgba(113, 64, 159, 0.99);
+    border: none;
+    color: white;
+}
+
+.list-group-item:hover {
+    background-color: rgba(255, 253, 171, 0.89);
+    color: black;
+}
+
+/* Calendario */
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.calendar-table th, .calendar-table td {
+    width: calc(100% / 7);
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+}
+
+.calendar-table th {
+    background-color: rgba(113, 64, 159, 0.99);
+    color: white;
+}
+
+.calendar-table td {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.calendar-table .hover-effect:hover {
+    background-color: rgba(255, 253, 171, 0.89);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.card-body h5 {
+    font-weight: bold;
+    color: rgba(113, 64, 159, 0.99); /* Color del texto para el mes */
+    margin-bottom: 15px;
+}
+
+
+.card {
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Chat mensajes burbujas */
+.chat-message {
+    background-color: rgba(222, 205, 237, 0.99);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px;
+    border-radius: 8px;
+    color: black;
+}
+
+.chat-message .bg-primary {
+    background-color: rgba(255, 253, 171, 0.68) !important;
+    color: black;
+}
+
+.chat-message .bg-secondary {
+    background-color: rgb(255, 255, 255) !important;
+    color: black;
+}
+
+.chat-message p {
+    margin: 0;
+    color: black;
+}
+
+.chat-message small {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+/* Footer de los mensajes */
+.card-footer {
+    background-color: rgba(113, 64, 159, 0.99);
+    border-top: 1px solid #ddd;
+}
+
+/* General button styles */
+.btn-primary {
+    background-color: rgba(46, 122, 105, 0.92);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: rgba(246, 139, 0, 0.86);
+}
+
+/* Estilo para la línea entre conversaciones */
+.chat-list-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 20px;
+}
+
+.chat-list-item:last-child {
+    border-bottom: none;
+}
+
+/* Cambio de color en hover */
+.chat-list-item:hover {
+    background-color: rgba(255, 253, 171, 0.89);
+    color: black;
+}
+
+/* Estilos para mensajes no leídos */
+.unread-message {
+    font-weight: bold;
+}
+
+/* Buscador con lupa */
+.input-group-text {
+    background-color: white;
+    border: none;
+}
+
+.input-group .form-control {
+    border: none;
+    box-shadow: none;
+}
+
+.input-group .form-control:focus {
+    box-shadow: none;
+}
+
+/* Footer styles */
+footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 15px 0;
+    border-top: 2px solid rgba(113, 64, 159, 0.99);
+    font-size: 14px;
+    text-align: center;
+}

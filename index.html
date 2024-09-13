@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Sistema de Comunicación</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"> <!-- Bootstrap Icons -->
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg shadow-sm">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Sistema de Comunicación</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">Preguntas Frecuentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="manuales.html">Manuales y Tutoriales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calendario.html">Calendario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="perfil.html">Perfil de Usuario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="chat.html">Chat</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Contenedor Principal -->
+<div class="container-fluid p-3">
+    <div class="row">
+        <!-- Sidebar - Conversaciones Recientes y Calendario -->
+        <div class="col-md-4 col-12 mb-3">
+            <!-- Conversaciones Recientes -->
+            <div class="card bg-light text-dark shadow-sm">
+                <div class="card-header">
+                    Conversaciones Recientes
+                </div>
+                <div class="p-2">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-0" id="search-addon">
+                            <i class="bi bi-search"></i> <!-- Icono de lupa -->
+                        </span>
+                        <input type="text" class="form-control" placeholder="Buscar conversación..." aria-label="Buscar conversación" aria-describedby="search-addon">
+                    </div>
+                </div>
+                <!-- Lista de conversaciones colapsable en móviles -->
+                <div class="accordion" id="conversationList">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button bg-warning text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Ver conversaciones recientes
+                            </button>
+                        </h2>
+
+
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#conversationList">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item chat-list-item unread-message">Nathan - Último mensaje hace 23 horas</li>
+                                <li class="list-group-item chat-list-item unread-message">Christian - Último mensaje hace 3 horas</li>
+                                <li class="list-group-item chat-list-item">Dylan - Último mensaje ayer</li>
+                                <li class="list-group-item chat-list-item">Austin - Último mensaje hace 2 horas</li>
+                                <li class="list-group-item chat-list-item">Xavier - Último mensaje hace 5 horas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calendario estilizado -->
+            <div class="card mt-3 shadow-sm">
+                <div class="card-header bg-dark text-white">
+                    Calendario
+                </div>
+                <div class="card-body p-3">
+                    <h5 class="text-center mb-3">Septiembre 2024</h5> <!-- Puedes cambiar el mes según sea necesario -->
+
+                    <table class="table table-bordered text-center calendar-table">
+                        <thead>
+                        <tr>
+                            <th>Lun</th>
+                            <th>Mar</th>
+                            <th>Mié</th>
+                            <th>Jue</th>
+                            <th>Vie</th>
+                            <th>Sáb</th>
+                            <th>Dom</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="hover-effect">1</td>
+                            <td class="hover-effect">2</td>
+                            <td class="hover-effect">3</td>
+                            <td class="hover-effect">4</td>
+                            <td class="bg-warning text-white">5</td>
+                            <td class="hover-effect">6</td>
+                            <td class="hover-effect">7</td>
+                        </tr>
+                        <tr>
+                            <td class="hover-effect">8</td>
+                            <td class="hover-effect">9</td>
+                            <td class="bg-warning text-white">10</>
+                            <td class="hover-effect">11</td>
+                            <td class="hover-effect">12</td>
+                            <td class="hover-effect">13</td>
+                            <td class="hover-effect">14</td>
+                        </tr>
+                        <tr>
+                            <td class="bg-warning text-white">15</td>
+                            <td class="hover-effect">16</td>
+                            <td class="hover-effect">17</td>
+                            <td class="hover-effect">18</td>
+                            <td class="hover-effect">19</td>
+                            <td class="hover-effect">20</td>
+                            <td class="hover-effect">21</td>
+                        </tr>
+                        <tr>
+                            <td class="hover-effect">22</td>
+                            <td class="hover-effect">23</td>
+                            <td class="hover-effect">25</td>
+                            <td class="bg-warning text-white">25</td>
+                            <td class="hover-effect">26</td>
+                            <td class="hover-effect">27</td>
+                            <td class="hover-effect">28</td>
+                        </tr>
+                        <tr>
+                            <td class="bg-warning text-white">29</td>
+                            <td class="bg-warning text-white">30</td>
+                            <td class="hover-effect"></td>
+                            <td class="hover-effect"></td>
+                            <td class="hover-effect"></td>
+                            <td class="hover-effect"></td>
+                            <td class="hover-effect"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Chat Window -->
+        <div class="col-md-8 col-12">
+            <div class="card bg-light text-dark shadow-sm">
+                <div class="card-header d-flex align-items-center">
+                    <img src="path-to-profile.png" alt="Foto de perfil" class="rounded-circle me-2" width="30">
+                    Mimi Carreira - En línea
+                </div>
+                <div class="card-body chat-message">
+                    <div class="chat-message">
+                        <!-- Emisor -->
+                        <div class="d-flex justify-content-end">
+                            <div class="bg-primary text-white p-2 rounded mb-2">
+                                <p class="mb-0">¿Qué opinas sobre el lanzamiento del producto?</p>
+                                <small class="text-muted">09:25 AM</small>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <div class="bg-primary text-white p-2 rounded mb-2">
+                                <p class="mb-0">Creo que es importante ajustar el plan antes de continuar.</p>
+                                <small class="text-muted">09:27 AM</small>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <div class="bg-primary text-white p-2 rounded mb-2">
+                                <p class="mb-0">¿Has revisado los últimos cambios en el documento?</p>
+                                <small class="text-muted">09:29 AM</small>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <div class="bg-primary text-white p-2 rounded mb-2">
+                                <p class="mb-0">Podemos reunirnos esta tarde para discutir los próximos pasos.</p>
+                                <small class="text-muted">09:32 AM</small>
+                            </div>
+                        </div>
+                        <!-- Receptor -->
+                        <div class="d-flex justify-content-start">
+                            <div class="bg-secondary text-white p-2 rounded mb-2">
+                                <p class="mb-0">Me parece buena idea, pero necesito más tiempo para revisar todo.</p>
+                                <small class="text-muted">09:35 AM</small>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-start">
+                            <div class="bg-secondary text-white p-2 rounded mb-2">
+                                <p class="mb-0">¿A qué hora podríamos reunirnos?</p>
+                                <small class="text-muted">09:36 AM</small>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-start">
+                            <div class="bg-secondary text-white p-2 rounded mb-2">
+                                <p class="mb-0">Estoy disponible después de las 3 PM.</p>
+                                <small class="text-muted">09:38 AM</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Escribe un mensaje...">
+                        <button class="btn btn-primary" type="button">Enviar</button>
+                    </div>
+                    <!-- Dropdown para adjuntar archivos -->
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            Adjuntar archivos
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Imagen</a></li>
+                            <li><a class="dropdown-item" href="#">Video</a></li>
+                            <li><a class="dropdown-item" href="#">Documento</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-white text-center p-3 mt-4">
+    <p>© 2024 Magdalena Inalaf - Todos los derechos reservados</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script> <!-- Script para negrita y fecha -->
+</body>
+</html>
