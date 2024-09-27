@@ -180,70 +180,76 @@
             <!-- Calendario estilizado -->
             <div class="card mt-3 shadow-sm">
                 <div class="card-header bg-dark text-white">
-                    Calendario
+                    <button class="btn btn-link text-white w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#calendarCollapse" aria-expanded="true" aria-controls="calendarCollapse">
+                        Calendario
+                    </button>
                 </div>
-                <div class="card-body p-3">
-                    <h5 class="text-center mb-3">Septiembre 2024</h5>
-                    <table class="table table-bordered text-center calendar-table">
-                        <thead>
-                        <tr>
-                            <th>Lun</th>
-                            <th>Mar</th>
-                            <th>Mié</th>
-                            <th>Jue</th>
-                            <th>Vie</th>
-                            <th>Sáb</th>
-                            <th>Dom</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td class="hover-effect">1</td>
-                            <td class="hover-effect">2</td>
-                            <td class="hover-effect">3</td>
-                            <td class="hover-effect">4</td>
-                            <td class="bg-warning text-white">5</td>
-                            <td class="hover-effect">6</td>
-                            <td class="hover-effect">7</td>
-                        </tr>
-                        <tr>
-                            <td class="hover-effect">8</td>
-                            <td class="hover-effect">9</td>
-                            <td class="bg-warning text-white">10</td>
-                            <td class="hover-effect">11</td>
-                            <td class="hover-effect">12</td>
-                            <td class="hover-effect">13</td>
-                            <td class="hover-effect">14</td>
-                        </tr>
-                        <tr>
-                            <td class="bg-warning text-white">15</td>
-                            <td class="bg-warning text-white">16</td>
-                            <td class="hover-effect">17</td>
-                            <td class="hover-effect">18</td>
-                            <td class="hover-effect">19</td>
-                            <td class="hover-effect">20</td>
-                            <td class="hover-effect">21</td>
-                        </tr>
-                        <tr>
-                            <td class="hover-effect">22</td>
-                            <td class="hover-effect">23</td>
-                            <td class="hover-effect">25</td>
-                            <td class="bg-warning text-white">25</td>
-                            <td class="hover-effect">26</td>
-                            <td class="hover-effect">27</td>
-                            <td class="hover-effect">28</td>
-                        </tr>
-                        <tr>
-                            <td class="hover-effect">29</td>
-                            <td class="hover-effect">30</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        </tbody>
-                    </table>
+                <div id="calendarCollapse" class="collapse show">
+                    <div class="card-body p-3">
+                        <h5 class="text-center mb-3">Septiembre 2024</h5>
+                        <div class="table-responsive"> <!-- Contenedor para la barra de desplazamiento -->
+                            <table class="table table-bordered text-center calendar-table">
+                                <thead>
+                                <tr>
+                                    <th>Lun</th>
+                                    <th>Mar</th>
+                                    <th>Mié</th>
+                                    <th>Jue</th>
+                                    <th>Vie</th>
+                                    <th>Sáb</th>
+                                    <th>Dom</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="hover-effect">1</td>
+                                    <td class="hover-effect">2</td>
+                                    <td class="hover-effect">3</td>
+                                    <td class="hover-effect">4</td>
+                                    <td class="bg-warning text-white">5</td>
+                                    <td class="hover-effect">6</td>
+                                    <td class="hover-effect">7</td>
+                                </tr>
+                                <tr>
+                                    <td class="hover-effect">8</td>
+                                    <td class="hover-effect">9</td>
+                                    <td class="bg-warning text-white">10</td>
+                                    <td class="hover-effect">11</td>
+                                    <td class="hover-effect">12</td>
+                                    <td class="hover-effect">13</td>
+                                    <td class="hover-effect">14</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-warning text-white">15</td>
+                                    <td class="bg-warning text-white">16</td>
+                                    <td class="hover-effect">17</td>
+                                    <td class="hover-effect">18</td>
+                                    <td class="hover-effect">19</td>
+                                    <td class="hover-effect">20</td>
+                                    <td class="hover-effect">21</td>
+                                </tr>
+                                <tr>
+                                    <td class="hover-effect">22</td>
+                                    <td class="hover-effect">23</td>
+                                    <td class="hover-effect">25</td>
+                                    <td class="bg-warning text-white">25</td>
+                                    <td class="hover-effect">26</td>
+                                    <td class="hover-effect">27</td>
+                                    <td class="hover-effect">28</td>
+                                </tr>
+                                <tr>
+                                    <td class="hover-effect">29</td>
+                                    <td class="hover-effect">30</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -347,7 +353,8 @@
                 <p class="mt-2">Gracias por usar nuestro Sistema de Comunicación</p>
             </div>
         </div>
-
+    </div>
+</div>
 
 <!-- Footer -->
 <footer class="text-white text-center p-3 mt-4">

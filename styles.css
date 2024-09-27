@@ -82,6 +82,19 @@ body {
 }
 
 /* Calendario */
+
+    /* Estilo para la tabla del calendario */
+.table-responsive {
+    overflow-x: auto; /* Permite desplazamiento horizontal */
+}
+
+/* Ajustes para la tabla en dispositivos pequeños */
+@media (max-width: 768px) {
+    .calendar-table th, .calendar-table td {
+        font-size: 12px; /* Ajustar el tamaño de fuente */
+        padding: 8px; /* Reducir el espaciado en celdas */
+    }
+}
 .calendar-table {
     width: 100%;
     border-collapse: collapse;
